@@ -34,60 +34,7 @@ LETTER_IMAGES_FOLDER10 = "Palm"
 LETTER_IMAGES_FOLDER11 = "Traffic Light"
 from csv import writer
 
-'''
-def append_list_as_row(file_name, list_of_elem):
-    # Open file in append mode
-    with open(file_name, 'a+', newline='') as write_obj:
-        # Create a writer object from csv module
-        csv_writer = writer(write_obj)
-        # Add contents of list as last row in the csv file
-        csv_writer.writerow(list_of_elem)
 
-
-row_content1 = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-row_content2 = [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-row_content3 = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
-row_content4 = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
-row_content5 = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
-row_content6 = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
-row_content7 = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
-row_content8 = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
-row_content9 = [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
-row_content10 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
-row_content11 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER0):
-    append_list_as_row('recap.csv', row_content1)
-
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER1):
-    append_list_as_row('recap.csv', row_content2)
-
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER2):
-    append_list_as_row('recap.csv', row_content3)
-
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER3):
-    append_list_as_row('recap.csv', row_content4)
-
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER4):
-    append_list_as_row('recap.csv', row_content5)
-
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER5):
-    append_list_as_row('recap.csv', row_content6)
-
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER6):
-    append_list_as_row('recap.csv', row_content7)
-
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER7):
-    append_list_as_row('recap.csv', row_content8)
-
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER8):
-    append_list_as_row('recap.csv', row_content9)
-
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER10):
-    append_list_as_row('recap.csv', row_content10)
-
-for image_file in paths.list_images(LETTER_IMAGES_FOLDER11):
-    append_list_as_row('recap.csv', row_content11)
-'''
 images = []
 for image_file in paths.list_images(LETTER_IMAGES_FOLDER0):
     image = cv2.imread(image_file)
